@@ -38,8 +38,18 @@
         </div>
 
         <div class="acciones-section">
-            <button id="btnListar" class="btn-secondary">Listar Tareas por Estado</button>
+            <div class="filtros">
+                <label for="filtroEstado">Filtrar por estado:</label>
+                <select id="filtroEstado" class="filtro-select">
+                    <option value="">Todas las tareas</option>
+                    <option value="Por hacer">Por hacer</option>
+                    <option value="En progreso">En progreso</option>
+                    <option value="Completada">Completada</option>
+                </select>
+            </div>
         </div>
+
+        <div class="estadisticas-section" id="estadisticas"></div>
 
         <div id="listadoTareas" class="listado-section"></div>
 

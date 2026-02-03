@@ -117,6 +117,69 @@ input:focus, select:focus {
 
 .acciones-section {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtros {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtro-select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.filtro-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.estadisticas-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.estadistica-card {
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estadistica-card h4 {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 8px;
+}
+
+.estadistica-card .numero {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.estadistica-card.por-hacer {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.estadistica-card.en-progreso {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.estadistica-card.completada {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
 .listado-section {
